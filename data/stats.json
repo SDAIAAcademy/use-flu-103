@@ -1,0 +1,785 @@
+{
+  "v": 1,
+  "engine": "1.0.0",
+  "build": {
+    "at": "2026-11-17T11:57:45Z",
+    "version": "2027.1.0",
+    "commit": "dff19f1"
+  },
+  "lang": "ar",
+  "dir": "rtl",
+  "totals": {
+    "decks": 6,
+    "slides": 94,
+    "words": 6586,
+    "notes": 77,
+    "notes_ratio": 0.82,
+    "activities": 17,
+    "styles": 7,
+    "slide_minutes": null,
+    "components": {
+      "cards": 76,
+      "pills": 0,
+      "callouts": 36,
+      "tables": 11,
+      "code": 0,
+      "tokens": 0,
+      "flows": 3,
+      "stats": 3,
+      "bars": 3,
+      "meters": 0,
+      "agendas": 6,
+      "quizzes": 17,
+      "checklists": 6,
+      "prompts": 0,
+      "chats": 2,
+      "tools": 0,
+      "traces": 0,
+      "ladders": 0,
+      "figures": 0,
+      "matrices": 0,
+      "timers": 0,
+      "columns": 38,
+      "images": 0,
+      "drawings": 0,
+      "fragments": 0
+    },
+    "minutes": 300
+  },
+  "decks": [
+    {
+      "deck": "module1",
+      "kind": "day",
+      "label": "الوحدة 1",
+      "title": "من البيانات إلى القرار",
+      "slides": 17,
+      "words": 1244,
+      "notes": 15,
+      "notes_ratio": 0.88,
+      "activities": 2,
+      "styles": 0,
+      "slide_minutes": null,
+      "components": {
+        "cards": 26,
+        "pills": 0,
+        "callouts": 6,
+        "tables": 2,
+        "code": 0,
+        "tokens": 0,
+        "flows": 1,
+        "stats": 0,
+        "bars": 0,
+        "meters": 0,
+        "agendas": 1,
+        "quizzes": 2,
+        "checklists": 1,
+        "prompts": 0,
+        "chats": 0,
+        "tools": 0,
+        "traces": 0,
+        "ladders": 0,
+        "figures": 0,
+        "matrices": 0,
+        "timers": 0,
+        "columns": 8,
+        "images": 0,
+        "drawings": 0,
+        "fragments": 0
+      },
+      "minutes": 50,
+      "sessions": [
+        {
+          "n": 1,
+          "label": "الجلسة 1",
+          "title": "الطريق من البيانات إلى القرار",
+          "slides": 12,
+          "words": 892,
+          "notes": 10,
+          "notes_ratio": 0.83,
+          "activities": 2,
+          "styles": 0,
+          "slide_minutes": null,
+          "components": {
+            "cards": 13,
+            "pills": 0,
+            "callouts": 6,
+            "tables": 2,
+            "code": 0,
+            "tokens": 0,
+            "flows": 1,
+            "stats": 0,
+            "bars": 0,
+            "meters": 0,
+            "agendas": 0,
+            "quizzes": 2,
+            "checklists": 1,
+            "prompts": 0,
+            "chats": 0,
+            "tools": 0,
+            "traces": 0,
+            "ladders": 0,
+            "figures": 0,
+            "matrices": 0,
+            "timers": 0,
+            "columns": 5,
+            "images": 0,
+            "drawings": 0,
+            "fragments": 0
+          },
+          "minutes": 50,
+          "lab_minutes": 25
+        }
+      ]
+    },
+    {
+      "deck": "module2",
+      "kind": "day",
+      "label": "الوحدة 2",
+      "title": "التعلم والتعميم",
+      "slides": 15,
+      "words": 1013,
+      "notes": 12,
+      "notes_ratio": 0.8,
+      "activities": 3,
+      "styles": 4,
+      "slide_minutes": null,
+      "components": {
+        "cards": 7,
+        "pills": 0,
+        "callouts": 7,
+        "tables": 1,
+        "code": 0,
+        "tokens": 0,
+        "flows": 1,
+        "stats": 2,
+        "bars": 2,
+        "meters": 0,
+        "agendas": 1,
+        "quizzes": 3,
+        "checklists": 1,
+        "prompts": 0,
+        "chats": 0,
+        "tools": 0,
+        "traces": 0,
+        "ladders": 0,
+        "figures": 0,
+        "matrices": 0,
+        "timers": 0,
+        "columns": 7,
+        "images": 0,
+        "drawings": 0,
+        "fragments": 0
+      },
+      "minutes": 50,
+      "sessions": [
+        {
+          "n": 1,
+          "label": "الجلسة 1",
+          "title": "نموذج نجح في اختباره ثم أخفق",
+          "slides": 12,
+          "words": 881,
+          "notes": 10,
+          "notes_ratio": 0.83,
+          "activities": 2,
+          "styles": 4,
+          "slide_minutes": null,
+          "components": {
+            "cards": 7,
+            "pills": 0,
+            "callouts": 6,
+            "tables": 1,
+            "code": 0,
+            "tokens": 0,
+            "flows": 1,
+            "stats": 2,
+            "bars": 2,
+            "meters": 0,
+            "agendas": 0,
+            "quizzes": 2,
+            "checklists": 1,
+            "prompts": 0,
+            "chats": 0,
+            "tools": 0,
+            "traces": 0,
+            "ladders": 0,
+            "figures": 0,
+            "matrices": 0,
+            "timers": 0,
+            "columns": 7,
+            "images": 0,
+            "drawings": 0,
+            "fragments": 0
+          },
+          "minutes": 50,
+          "lab_minutes": 25
+        }
+      ]
+    },
+    {
+      "deck": "module3",
+      "kind": "day",
+      "label": "الوحدة 3",
+      "title": "الأخطاء والمعدلات الأساسية والعتبات",
+      "slides": 15,
+      "words": 952,
+      "notes": 12,
+      "notes_ratio": 0.8,
+      "activities": 3,
+      "styles": 0,
+      "slide_minutes": null,
+      "components": {
+        "cards": 7,
+        "pills": 0,
+        "callouts": 5,
+        "tables": 3,
+        "code": 0,
+        "tokens": 0,
+        "flows": 0,
+        "stats": 1,
+        "bars": 0,
+        "meters": 0,
+        "agendas": 1,
+        "quizzes": 3,
+        "checklists": 1,
+        "prompts": 0,
+        "chats": 0,
+        "tools": 0,
+        "traces": 0,
+        "ladders": 0,
+        "figures": 0,
+        "matrices": 0,
+        "timers": 0,
+        "columns": 5,
+        "images": 0,
+        "drawings": 0,
+        "fragments": 0
+      },
+      "minutes": 50,
+      "sessions": [
+        {
+          "n": 1,
+          "label": "الجلسة 1",
+          "title": "ما لا يقوله معدل الكشف",
+          "slides": 12,
+          "words": 809,
+          "notes": 10,
+          "notes_ratio": 0.83,
+          "activities": 2,
+          "styles": 0,
+          "slide_minutes": null,
+          "components": {
+            "cards": 7,
+            "pills": 0,
+            "callouts": 4,
+            "tables": 3,
+            "code": 0,
+            "tokens": 0,
+            "flows": 0,
+            "stats": 1,
+            "bars": 0,
+            "meters": 0,
+            "agendas": 0,
+            "quizzes": 2,
+            "checklists": 1,
+            "prompts": 0,
+            "chats": 0,
+            "tools": 0,
+            "traces": 0,
+            "ladders": 0,
+            "figures": 0,
+            "matrices": 0,
+            "timers": 0,
+            "columns": 5,
+            "images": 0,
+            "drawings": 0,
+            "fragments": 0
+          },
+          "minutes": 50,
+          "lab_minutes": 25
+        }
+      ]
+    },
+    {
+      "deck": "module4",
+      "kind": "day",
+      "label": "الوحدة 4",
+      "title": "التسرب والتحيز",
+      "slides": 15,
+      "words": 1040,
+      "notes": 12,
+      "notes_ratio": 0.8,
+      "activities": 3,
+      "styles": 3,
+      "slide_minutes": null,
+      "components": {
+        "cards": 9,
+        "pills": 0,
+        "callouts": 6,
+        "tables": 1,
+        "code": 0,
+        "tokens": 0,
+        "flows": 1,
+        "stats": 0,
+        "bars": 1,
+        "meters": 0,
+        "agendas": 1,
+        "quizzes": 3,
+        "checklists": 1,
+        "prompts": 0,
+        "chats": 0,
+        "tools": 0,
+        "traces": 0,
+        "ladders": 0,
+        "figures": 0,
+        "matrices": 0,
+        "timers": 0,
+        "columns": 6,
+        "images": 0,
+        "drawings": 0,
+        "fragments": 0
+      },
+      "minutes": 50,
+      "sessions": [
+        {
+          "n": 1,
+          "label": "الجلسة 1",
+          "title": "حين تختبئ الإجابة في البيانات",
+          "slides": 12,
+          "words": 895,
+          "notes": 10,
+          "notes_ratio": 0.83,
+          "activities": 2,
+          "styles": 3,
+          "slide_minutes": null,
+          "components": {
+            "cards": 9,
+            "pills": 0,
+            "callouts": 5,
+            "tables": 1,
+            "code": 0,
+            "tokens": 0,
+            "flows": 1,
+            "stats": 0,
+            "bars": 1,
+            "meters": 0,
+            "agendas": 0,
+            "quizzes": 2,
+            "checklists": 1,
+            "prompts": 0,
+            "chats": 0,
+            "tools": 0,
+            "traces": 0,
+            "ladders": 0,
+            "figures": 0,
+            "matrices": 0,
+            "timers": 0,
+            "columns": 6,
+            "images": 0,
+            "drawings": 0,
+            "fragments": 0
+          },
+          "minutes": 50,
+          "lab_minutes": 25
+        }
+      ]
+    },
+    {
+      "deck": "module5",
+      "kind": "day",
+      "label": "الوحدة 5",
+      "title": "النماذج اللغوية: السلاسة لا تعني الصحة",
+      "slides": 16,
+      "words": 1176,
+      "notes": 13,
+      "notes_ratio": 0.81,
+      "activities": 3,
+      "styles": 0,
+      "slide_minutes": null,
+      "components": {
+        "cards": 13,
+        "pills": 0,
+        "callouts": 7,
+        "tables": 1,
+        "code": 0,
+        "tokens": 0,
+        "flows": 0,
+        "stats": 0,
+        "bars": 0,
+        "meters": 0,
+        "agendas": 1,
+        "quizzes": 3,
+        "checklists": 1,
+        "prompts": 0,
+        "chats": 2,
+        "tools": 0,
+        "traces": 0,
+        "ladders": 0,
+        "figures": 0,
+        "matrices": 0,
+        "timers": 0,
+        "columns": 6,
+        "images": 0,
+        "drawings": 0,
+        "fragments": 0
+      },
+      "minutes": 50,
+      "sessions": [
+        {
+          "n": 1,
+          "label": "الجلسة 1",
+          "title": "السلاسة لا تعني الصحة",
+          "slides": 13,
+          "words": 1034,
+          "notes": 11,
+          "notes_ratio": 0.85,
+          "activities": 2,
+          "styles": 0,
+          "slide_minutes": null,
+          "components": {
+            "cards": 13,
+            "pills": 0,
+            "callouts": 6,
+            "tables": 1,
+            "code": 0,
+            "tokens": 0,
+            "flows": 0,
+            "stats": 0,
+            "bars": 0,
+            "meters": 0,
+            "agendas": 0,
+            "quizzes": 2,
+            "checklists": 1,
+            "prompts": 0,
+            "chats": 2,
+            "tools": 0,
+            "traces": 0,
+            "ladders": 0,
+            "figures": 0,
+            "matrices": 0,
+            "timers": 0,
+            "columns": 6,
+            "images": 0,
+            "drawings": 0,
+            "fragments": 0
+          },
+          "minutes": 50,
+          "lab_minutes": 25
+        }
+      ]
+    },
+    {
+      "deck": "module6",
+      "kind": "day",
+      "label": "الوحدة 6",
+      "title": "مساءلة الادعاء",
+      "slides": 16,
+      "words": 1161,
+      "notes": 13,
+      "notes_ratio": 0.81,
+      "activities": 3,
+      "styles": 0,
+      "slide_minutes": null,
+      "components": {
+        "cards": 14,
+        "pills": 0,
+        "callouts": 5,
+        "tables": 3,
+        "code": 0,
+        "tokens": 0,
+        "flows": 0,
+        "stats": 0,
+        "bars": 0,
+        "meters": 0,
+        "agendas": 1,
+        "quizzes": 3,
+        "checklists": 1,
+        "prompts": 0,
+        "chats": 0,
+        "tools": 0,
+        "traces": 0,
+        "ladders": 0,
+        "figures": 0,
+        "matrices": 0,
+        "timers": 0,
+        "columns": 6,
+        "images": 0,
+        "drawings": 0,
+        "fragments": 0
+      },
+      "minutes": 50,
+      "sessions": [
+        {
+          "n": 1,
+          "label": "الجلسة 1",
+          "title": "الأدلة التي يدين لك بها الادعاء",
+          "slides": 13,
+          "words": 1017,
+          "notes": 11,
+          "notes_ratio": 0.85,
+          "activities": 2,
+          "styles": 0,
+          "slide_minutes": null,
+          "components": {
+            "cards": 14,
+            "pills": 0,
+            "callouts": 4,
+            "tables": 3,
+            "code": 0,
+            "tokens": 0,
+            "flows": 0,
+            "stats": 0,
+            "bars": 0,
+            "meters": 0,
+            "agendas": 0,
+            "quizzes": 2,
+            "checklists": 1,
+            "prompts": 0,
+            "chats": 0,
+            "tools": 0,
+            "traces": 0,
+            "ladders": 0,
+            "figures": 0,
+            "matrices": 0,
+            "timers": 0,
+            "columns": 6,
+            "images": 0,
+            "drawings": 0,
+            "fragments": 0
+          },
+          "minutes": 50,
+          "lab_minutes": 25
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "id": "LO1",
+      "text": "يصف المسار من البيانات إلى النموذج إلى القرار في نظام ذكاء اصطناعي في بيئة العمل، ويحدد المواضع التي يتخذ فيها الأشخاص خيارات، استنادًا إلى حالة اصطناعية لأداة آلية لفرز طلبات الإجازة",
+      "level": "Awareness",
+      "slides": [
+        "module1#four-task-types",
+        "module1#examples-features-labels",
+        "module1#nobody-wrote-the-rule",
+        "module1#train-test-threshold",
+        "module1#check-what-is-the-model",
+        "module1#who-chooses-what",
+        "module1#check-human-choices",
+        "module2#review-module-1"
+      ],
+      "activities": [
+        "module1#check-human-choices-q1",
+        "module2#review-module-1-q1"
+      ],
+      "sessions": [
+        "module1/1"
+      ],
+      "labs": [
+        "1.1"
+      ],
+      "questions": [
+        "q-path-01",
+        "q-path-02",
+        "q-path-03"
+      ],
+      "covered": true
+    },
+    {
+      "id": "LO2",
+      "text": "يشرح لماذا قد تكون الإجابة السلسة للنموذج اللغوي خاطئة، ومن ذلك التنبؤ بالكلمة التالية والمعرفة الناقصة أو القديمة والميل إلى موافقة المستخدم، استنادًا إلى أربع إجابات لنموذج فيها أخطاء معروفة",
+      "level": "Awareness",
+      "slides": [
+        "module5#next-word-prediction",
+        "module5#same-confidence",
+        "module5#cutoff-and-local",
+        "module5#invented-sources",
+        "module5#check-cause-of-error",
+        "module5#agrees-with-you",
+        "module5#system-around-llm",
+        "module5#verify-habits",
+        "module5#check-what-to-verify",
+        "module6#review-module-5"
+      ],
+      "activities": [
+        "module5#check-cause-of-error-q1",
+        "module5#check-what-to-verify-q1",
+        "module6#review-module-5-q1"
+      ],
+      "sessions": [
+        "module5/1"
+      ],
+      "labs": [
+        "5.1"
+      ],
+      "questions": [
+        "q-llm-01",
+        "q-llm-02",
+        "q-llm-03",
+        "q-llm-04"
+      ],
+      "covered": true
+    },
+    {
+      "id": "LO3",
+      "text": "يحسب الإنذارات الكاذبة والحالات الفائتة ونسبة التنبيهات الصحيحة التي تقتضيها معدلات الكشف المعلنة عندما يكون الحدث نادرًا، ويبيّن لماذا تضلل الصحة الإجمالية، استنادًا إلى كاشف احتيال يُقال إنه يكشف 95% من حالات الاحتيال ويُبرئ 95% من الحالات السليمة، مع احتيال في حالة واحدة من كل مئة، وإلى قاعدة لا تنبّه على أي حالة",
+      "level": "Applied",
+      "slides": [
+        "module3#two-kinds-of-error",
+        "module3#who-pays-each-error",
+        "module3#base-rate-first",
+        "module3#worked-table",
+        "module3#check-flags-that-are-real",
+        "module3#accuracy-misleads",
+        "module3#threshold-is-policy",
+        "module3#check-choose-threshold",
+        "module4#review-module-3"
+      ],
+      "activities": [
+        "module3#check-flags-that-are-real-q1",
+        "module3#check-choose-threshold-q1",
+        "module4#review-module-3-q1"
+      ],
+      "sessions": [
+        "module3/1"
+      ],
+      "labs": [
+        "3.1"
+      ],
+      "questions": [
+        "q-base-01",
+        "q-base-02",
+        "q-base-03",
+        "q-base-04"
+      ],
+      "covered": true
+    },
+    {
+      "id": "LO4",
+      "text": "يصف كيف يخفض فرط التخصيص وتغير البيانات أداء النموذج على البيانات الجديدة، استنادًا إلى مصنِّف دون برمجة دُرّب في القاعة، ونتائج اختباره، ودفعة لاحقة من بيانات اصطناعية تغير توزيعها",
+      "level": "Awareness",
+      "slides": [
+        "module2#why-hold-out-a-test",
+        "module2#overfitting-memorises",
+        "module2#check-read-the-gap",
+        "module2#shift-world-changed",
+        "module2#two-kinds-of-shift",
+        "module2#stale-models",
+        "module2#more-data-not-better",
+        "module2#check-what-shifted",
+        "module3#review-module-2"
+      ],
+      "activities": [
+        "module2#check-read-the-gap-q1",
+        "module2#check-what-shifted-q1",
+        "module3#review-module-2-q1"
+      ],
+      "sessions": [
+        "module2/1"
+      ],
+      "labs": [
+        "2.1"
+      ],
+      "questions": [
+        "q-general-01",
+        "q-general-02",
+        "q-general-03",
+        "q-general-04"
+      ],
+      "covered": true
+    },
+    {
+      "id": "LO5",
+      "text": "يحلل وصف مجموعة بيانات بحثًا عن التسرب بين بيانات التدريب والاختبار والتغطية غير الممثلة والوسوم غير الموثوقة، ويذكر من قد يتضرر من كل مشكلة، استنادًا إلى ثلاث بطاقات لمجموعات بيانات اصطناعية عن التوظيف ومواعيد العيادات والقروض",
+      "level": "Applied",
+      "slides": [
+        "module4#leakage-answer-hides",
+        "module4#two-doors-for-leakage",
+        "module4#check-spot-the-leak",
+        "module4#three-biases",
+        "module4#history-repeated",
+        "module4#subgroup-results",
+        "module4#read-a-card",
+        "module4#check-which-problem",
+        "module5#review-module-4"
+      ],
+      "activities": [
+        "module4#check-spot-the-leak-q1",
+        "module4#check-which-problem-q1",
+        "module5#review-module-4-q1"
+      ],
+      "sessions": [
+        "module4/1"
+      ],
+      "labs": [
+        "4.1"
+      ],
+      "questions": [
+        "q-data-01",
+        "q-data-02",
+        "q-data-03",
+        "q-data-04"
+      ],
+      "covered": true
+    },
+    {
+      "id": "LO6",
+      "text": "يصوغ نقدًا لادعاء دقة يقدمه مورِّد، يطلب فيه الأدلة الغائبة: بيانات الاختبار والمعدل الأساسي وأنواع الأخطاء ونتائج المجموعات الفرعية وشروط الاستخدام، استنادًا إلى نشرة تعريفية من صفحة واحدة يقدمها مورِّد لأداة فرز السير الذاتية",
+      "level": "Applied",
+      "slides": [
+        "module6#five-missing-evidence",
+        "module6#tested-on-whom",
+        "module6#numbers-on-your-data",
+        "module6#who-bears-errors",
+        "module6#check-missing-evidence",
+        "module6#automation-bias"
+      ],
+      "activities": [
+        "module6#check-missing-evidence-q1"
+      ],
+      "sessions": [
+        "module6/1"
+      ],
+      "labs": [
+        "6.1"
+      ],
+      "questions": [
+        "q-claim-01",
+        "q-claim-02",
+        "q-claim-03",
+        "q-claim-04"
+      ],
+      "covered": true
+    },
+    {
+      "id": "LO7",
+      "text": "يميّز بين النموذج والنظام المحيط به، ومن ذلك القواعد والاسترجاع والأدوات والمراجعة البشرية، ويحدد المواضع التي يجب أن يبقى فيها الإنسان ضمن الحلقة، استنادًا إلى ثلاثة أوصاف قصيرة لأنظمة",
+      "level": "Awareness",
+      "slides": [
+        "module1#check-what-is-the-model",
+        "module1#model-versus-system",
+        "module5#system-around-llm",
+        "module6#automation-bias",
+        "module6#oversight-and-challenge",
+        "module6#check-oversight"
+      ],
+      "activities": [
+        "module1#check-what-is-the-model-q1",
+        "module6#check-oversight-q1"
+      ],
+      "sessions": [
+        "module1/1",
+        "module6/1"
+      ],
+      "labs": [
+        "1.1",
+        "6.1"
+      ],
+      "questions": [
+        "q-system-01",
+        "q-system-02",
+        "q-system-03"
+      ],
+      "covered": true
+    }
+  ]
+}

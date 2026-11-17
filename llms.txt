@@ -1,0 +1,39 @@
+# كيف تتعلم أنظمة الذكاء الاصطناعي وأين تخفق
+
+> تتتبع الطريق من البيانات إلى القرار، وتعرف لماذا ينجح النموذج في اختباره ثم يخفق، وتطلب من صاحب أي ادعاء دقة الأدلة التي لم يذكرها. مقرر من أكاديمية سدايا، الرمز USE-FLU-103، الإصدار 2027.1.0، بالعربية.
+
+كل شريحة عنوان مثل "#### [day1#slide-id] العنوان": استشهد بالشرائح بهذا المعرّف، وكل استشهاد رابط (slides/day1.html#slide-id). هذه الملفات هي ما يراه المشارك: لا ملاحظات المدرّب فيها ولا مفاتيح الإجابة.
+
+## المقرر
+
+- [صفحة المقرر](https://sdaiaacademy.github.io/use-flu-103/index.md): نظرة عامة ونواتج التعلم والجدول والمختبرات؛ الصفحة نفسها https://sdaiaacademy.github.io/use-flu-103/index.html
+- [المقرر كاملًا](https://sdaiaacademy.github.io/use-flu-103/llms-full.txt): كل وحدة وجلسة وشريحة في ملف واحد، نحو 16,040 من الوحدات النصية
+- [أسئلة التدريب](https://sdaiaacademy.github.io/use-flu-103/practice.html): أسئلة تختبر بها نفسك، مع تعليل بعد كل إجابة
+
+## الشرائح
+
+- [الوحدة 1: من البيانات إلى القرار](https://sdaiaacademy.github.io/use-flu-103/slides/module1.md): ما الذي يحدث بين جدول من الأمثلة وقرار يمسّ موظفًا، ومن اختار ماذا في الطريق؛ الجلسات: الطريق من البيانات إلى القرار؛ الصفحة: https://sdaiaacademy.github.io/use-flu-103/slides/module1.html؛ نحو 2,888 من الوحدات النصية
+- [الوحدة 2: التعلم والتعميم](https://sdaiaacademy.github.io/use-flu-103/slides/module2.md): لماذا ينجح النموذج في اختباره ثم يخفق بعد عام؛ الجلسات: نموذج نجح في اختباره ثم أخفق؛ الصفحة: https://sdaiaacademy.github.io/use-flu-103/slides/module2.html؛ نحو 2,344 من الوحدات النصية
+- [الوحدة 3: الأخطاء والمعدلات الأساسية والعتبات](https://sdaiaacademy.github.io/use-flu-103/slides/module3.md): ما الذي لا يقوله معدل الكشف ولا تقوله الصحة الإجمالية حين يكون الحدث نادرًا؛ الجلسات: ما لا يقوله معدل الكشف؛ الصفحة: https://sdaiaacademy.github.io/use-flu-103/slides/module3.html؛ نحو 2,217 من الوحدات النصية
+- [الوحدة 4: التسرب والتحيز](https://sdaiaacademy.github.io/use-flu-103/slides/module4.md): حين تختبئ الإجابة في البيانات، وحين تكرر البيانات ما كان لا ما يجب؛ الجلسات: حين تختبئ الإجابة في البيانات؛ الصفحة: https://sdaiaacademy.github.io/use-flu-103/slides/module4.html؛ نحو 2,450 من الوحدات النصية
+- [الوحدة 5: النماذج اللغوية: السلاسة لا تعني الصحة](https://sdaiaacademy.github.io/use-flu-103/slides/module5.md): لماذا يكتب النموذج اللغوي جوابًا واثقًا وسليم اللغة وخاطئًا؛ الجلسات: السلاسة لا تعني الصحة؛ الصفحة: https://sdaiaacademy.github.io/use-flu-103/slides/module5.html؛ نحو 2,720 من الوحدات النصية
+- [الوحدة 6: مساءلة الادعاء](https://sdaiaacademy.github.io/use-flu-103/slides/module6.md): الأدلة التي يدين لك بها كل من يقول «دقة 96%»؛ الجلسات: الأدلة التي يدين لك بها الادعاء؛ الصفحة: https://sdaiaacademy.github.io/use-flu-103/slides/module6.html؛ نحو 2,669 من الوحدات النصية
+
+## المختبرات
+
+- [المختبر 1.1: خريطة «إذن»](https://sdaiaacademy.github.io/use-flu-103/labs/M1_1_pipeline_map.md): الوحدة 1، الجلسة 1، 25 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-flu-103/labs/M1_1_pipeline_map.html
+- [المختبر 2.1: درِّب مصنِّفًا ثم اكسره](https://sdaiaacademy.github.io/use-flu-103/labs/M2_1_train_and_break.md): الوحدة 2، الجلسة 1، 25 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-flu-103/labs/M2_1_train_and_break.html
+- [المختبر 3.1: جدول الألف حالة](https://sdaiaacademy.github.io/use-flu-103/labs/M3_1_thousand_cases.md): الوحدة 3، الجلسة 1، 25 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-flu-103/labs/M3_1_thousand_cases.html
+- [المختبر 4.1: ثلاث بطاقات بيانات](https://sdaiaacademy.github.io/use-flu-103/labs/M4_1_dataset_cards.md): الوحدة 4، الجلسة 1، 25 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-flu-103/labs/M4_1_dataset_cards.html
+- [المختبر 5.1: اجمع أخطاء سلسة](https://sdaiaacademy.github.io/use-flu-103/labs/M5_1_fluent_errors.md): الوحدة 5، الجلسة 1، 25 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-flu-103/labs/M5_1_fluent_errors.html
+- [المختبر 6.1: نقد نشرة «نخبة»](https://sdaiaacademy.github.io/use-flu-103/labs/M6_1_critique.md): الوحدة 6، الجلسة 1، 25 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-flu-103/labs/M6_1_critique.html
+
+## ملفات السياق
+
+- [context/course.md](https://sdaiaacademy.github.io/use-flu-103/context/course.md): المقرر كاملًا، لمساعد يقبل ملفًا مرفقًا، نحو 16,040 من الوحدات النصية
+- [context/module1.md](https://sdaiaacademy.github.io/use-flu-103/context/module1.md): الوحدة 1، نحو 2,888 من الوحدات النصية
+- [context/module2.md](https://sdaiaacademy.github.io/use-flu-103/context/module2.md): الوحدة 2، نحو 2,344 من الوحدات النصية
+- [context/module3.md](https://sdaiaacademy.github.io/use-flu-103/context/module3.md): الوحدة 3، نحو 2,217 من الوحدات النصية
+- [context/module4.md](https://sdaiaacademy.github.io/use-flu-103/context/module4.md): الوحدة 4، نحو 2,450 من الوحدات النصية
+- [context/module5.md](https://sdaiaacademy.github.io/use-flu-103/context/module5.md): الوحدة 5، نحو 2,720 من الوحدات النصية
+- [context/module6.md](https://sdaiaacademy.github.io/use-flu-103/context/module6.md): الوحدة 6، نحو 2,669 من الوحدات النصية
