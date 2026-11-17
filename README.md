@@ -96,7 +96,7 @@ How AI Systems Learn and Where They Fail
 ### المرجعيات الوطنية
 
 - [سدايا: مبادئ أخلاقيات الذكاء الاصطناعي](https://sdaia.gov.sa/ar/SDAIA/about/Documents/ai-principles.pdf)
-- [سدايا: الدليل المرجعي للتحيز في الذكاء الاصطناعي](https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/AR-AI-BIAS.pdf)
+- [سدايا: دليل تحيزات الذكاء الاصطناعي](https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/AR-AI-BIAS.pdf)
 - [سدايا: منهج البيانات والذكاء الاصطناعي لطلبة الجامعات في مختلف التخصصات](https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/Data-AI-Curriculum-University-Students.pdf)
 
 ### قراءات لمن يريد التوسع
@@ -115,5 +115,5 @@ How AI Systems Learn and Where They Fail
 ### المرجعيات الوطنية
 
 - مبادئ أخلاقيات الذكاء الاصطناعي الصادرة عن سدايا (الإنصاف؛ الموثوقية والسلامة؛ الشفافية والقابلية للتفسير): https://sdaia.gov.sa/ar/SDAIA/about/Documents/ai-principles.pdf
-- الدليل المرجعي للتحيز في الذكاء الاصطناعي الصادر عن سدايا: https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/AR-AI-BIAS.pdf
+- الدليل المرجعي للتحيز في الذكاء الاصطناعي الصادر عن سدايا، وعنوانه الرسمي «دليل تحيزات الذكاء الاصطناعي»: https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/AR-AI-BIAS.pdf
 - منهج البيانات والذكاء الاصطناعي لطلبة الجامعات في مختلف التخصصات، المكوّن 3 (كيف تتعلم الآلات): https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/Data-AI-Curriculum-University-Students.pdf
