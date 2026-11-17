@@ -26,7 +26,8 @@
   table { border-collapse: collapse; width: 100%; font-size: .92rem; }
   th, td { border: 1px solid var(--line); padding: 6px 8px; text-align: start; white-space: nowrap; }
   th { background: #eef1f6; }
-  td.num, th.num { text-align: end; font-variant-numeric: tabular-nums; }
+  td.num, th.num { text-align: left; font-variant-numeric: tabular-nums; }
+  td.num { direction: ltr; unicode-bidi: isolate; }
   .big { font-size: 1.9rem; font-weight: 700; color: var(--navy); }
   .big.bad { color: var(--coral); }
   .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
