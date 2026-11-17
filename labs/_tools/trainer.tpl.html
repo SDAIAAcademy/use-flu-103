@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مدرِّب المصنِّف · صيدليات بلسم</title>
+<style>
+  :root { --navy: #14213d; --teal: #0a7c72; --coral: #b23a2e; --paper: #f6f4ef; --line: #d9d5cb; --muted: #5b6270; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, sans-serif; background: var(--paper); color: #1c2330; line-height: 1.75; }
+  header { background: var(--navy); color: #fff; padding: 18px 16px; }
+  header h1 { margin: 0; font-size: 1.35rem; }
+  header p { margin: 4px 0 0; color: #d6dbe6; font-size: .95rem; }
+  main { max-width: 860px; margin: 0 auto; padding: 14px 14px 60px; }
+  section { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; margin-top: 14px; }
+  h2 { margin: 0 0 8px; font-size: 1.1rem; color: var(--navy); }
+  p { margin: 6px 0; }
+  .muted { color: var(--muted); font-size: .92rem; }
+  label.f { display: block; padding: 6px 0; }
+  label.f input { margin-inline-end: 8px; transform: scale(1.2); }
+  input[type=range] { width: 100%; }
+  button { font: inherit; font-weight: 700; border: 0; border-radius: 10px; padding: 12px 18px; min-height: 44px; background: var(--teal); color: #fff; cursor: pointer; margin: 6px 0; }
+  button.second { background: var(--navy); }
+  button:disabled { background: #a9afba; cursor: default; }
+  .scroll { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: .92rem; }
+  th, td { border: 1px solid var(--line); padding: 6px 8px; text-align: start; white-space: nowrap; }
+  th { background: #eef1f6; }
+  td.num, th.num { text-align: end; font-variant-numeric: tabular-nums; }
+  .big { font-size: 1.9rem; font-weight: 700; color: var(--navy); }
+  .big.bad { color: var(--coral); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+  .box { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; background: var(--paper); }
+  ul.rules { margin: 6px 0; padding-inline-start: 20px; }
+  .ltr { direction: ltr; unicode-bidi: isolate; display: inline-block; }
+  .warn { border-inline-start: 5px solid var(--coral); background: #fbefed; padding: 8px 12px; border-radius: 8px; margin-top: 8px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>مدرِّب المصنِّف</h1>
+  <p>صيدليات بلسم · طلبات الإجازة · بيانات اصطناعية · يعمل كله داخل هذه الصفحة ولا يرسل شيئًا إلى أي جهة</p>
+</header>
+<main>
+  <section>
+    <h2>1 · البيانات</h2>
+    <p>800 طلب إجازة من عام 2025، لكل طلب ست خصائص ورقم وظيفي، ومعه <b>الوسم</b>: ما قرره مشرف الموارد البشرية يومها، «اعتماد سريع» أو «مراجعة». قُسمت الطلبات مرة واحدة: <b>600 للتدريب</b> و<b>200 محجوزة للاختبار</b> لا يراها النموذج وهو يتعلم.</p>
+    <div class="scroll"><table id="sample"></table></div>
+    <p class="muted">أول ستة طلبات من بيانات التدريب. الملف كاملًا: <span class="ltr">leave_requests_2025.csv</span></p>
+  </section>
+
+  <section>
+    <h2>2 · الخصائص التي يراها النموذج</h2>
+    <div id="features"></div>
+  </section>
+
+  <section>
+    <h2>3 · عمق الشجرة: <span id="depthValue">4</span></h2>
+    <p class="muted">النموذج شجرة قرار: سلسلة أسئلة من نوع «هل أيام الإشعار أقل من 7؟». العمق هو أكبر عدد من الأسئلة المتتالية. شجرة أعمق تحفظ تفاصيل أكثر من بيانات التدريب.</p>
+    <input type="range" id="depth" min="1" max="12" value="4" aria-label="عمق الشجرة">
+    <p><button id="train">درِّب واختبر</button></p>
+  </section>
+
+  <section id="result" hidden>
+    <h2>4 · النتيجة</h2>
+    <div class="grid">
+      <div class="box"><div class="muted">الصحة الإجمالية على بيانات التدريب (600)</div><div class="big" id="accTrain"></div></div>
+      <div class="box"><div class="muted">الصحة الإجمالية على بيانات الاختبار (200)</div><div class="big" id="accTest"></div></div>
+      <div class="box"><div class="muted">عدد القواعد النهائية في الشجرة</div><div class="big" id="leaves"></div></div>
+    </div>
+    <p class="muted">أخطاء النموذج على بيانات الاختبار:</p>
+    <div class="scroll"><table id="confusion"></table></div>
+    <p class="muted">أول الأسئلة التي تعلّمها النموذج:</p>
+    <ul class="rules" id="rules"></ul>
+    <p><button id="later" class="second">اختبر على دفعة 2026</button></p>
+  </section>
+
+  <section id="laterResult" hidden>
+    <h2>5 · بعد عام: دفعة 2026</h2>
+    <p>300 طلب من الربع الثاني من عام 2026. النموذج نفسه، دون إعادة تدريب.</p>
+    <div class="grid">
+      <div class="box"><div class="muted">الصحة الإجمالية على دفعة 2026 (300)</div><div class="big bad" id="accLater"></div></div>
+      <div class="box"><div class="muted">الفرق عن الاختبار</div><div class="big bad" id="drop"></div></div>
+    </div>
+    <p class="muted">الصحة الإجمالية بحسب نوع الفرع:</p>
+    <div class="scroll"><table id="byBranch"></table></div>
+    <div class="warn">ماذا تغيّر بين العامين؟ انظر إلى عدد الطلبات من كل نوع فرع، ثم إلى الصف الذي انخفض فيه الرقم.</div>
+  </section>
+
+  <section>
+    <h2>سجل المحاولات</h2>
+    <div class="scroll"><table id="log"><tr><th>المحاولة</th><th>الخصائص</th><th class="num">العمق</th><th class="num">التدريب</th><th class="num">الاختبار</th><th class="num">دفعة 2026</th></tr></table></div>
+    <p class="muted">انقل الأرقام إلى ورقة المختبر: السجل يُمحى عند إغلاق الصفحة.</p>
+  </section>
+</main>
+
+<script id="core">
+/*CORE*/
+</script>
+<script id="data" type="application/json">/*DATA*/</script>
+<script>
+(function () {
+  'use strict';
+  var FEATURES = [
+    { id: 'notice_days', kind: 'num', name: 'أيام الإشعار المسبق', on: true },
+    { id: 'days_requested', kind: 'num', name: 'عدد أيام الإجازة المطلوبة', on: true },
+    { id: 'balance_after', kind: 'num', name: 'الرصيد المتبقي بعد الإجازة', on: true },
+    { id: 'same_week_absent', kind: 'num', name: 'زملاء غائبون في الأسبوع نفسه', on: true },
+    { id: 'branch_type', kind: 'cat', name: 'نوع الفرع', on: true },
+    { id: 'month', kind: 'num', name: 'الشهر', on: true },
+    { id: 'employee_no', kind: 'num', name: 'الرقم الوظيفي', on: false }
+  ];
+  var BRANCH = { street: 'شارع', mall: 'مركز تجاري', hospital: 'مستشفى' };
+  var DECISION = { 1: 'مراجعة', 0: 'اعتماد سريع' };
+  var data = JSON.parse(document.getElementById('data').textContent);
+  var rows = { train: [], test: [], later: [] };
+  data.y2025.concat(data.y2026).forEach(function (r) { var row = TreeCore.leaveRow(r); rows[row.split].push(row); });
+  var tree = null, attempt = 0, lastLogRow = null;
+
+  function $(id) { return document.getElementById(id); }
+  function el(tag, text, cls) { var e = document.createElement(tag); if (text !== undefined) e.textContent = text; if (cls) e.className = cls; return e; }
+  function pct(x) { return (Math.round(x * 1000) / 10).toFixed(1) + '%'; }
+  function value(f, v) { return f.id === 'branch_type' ? BRANCH[v] : String(v); }
+
+  var sample = $('sample'), head = el('tr');
+  FEATURES.forEach(function (f) { head.appendChild(el('th', f.name)); });
+  head.appendChild(el('th', 'الوسم'));
+  sample.appendChild(head);
+  rows.train.slice(0, 6).forEach(function (r) {
+    var tr = el('tr');
+    FEATURES.forEach(function (f) { tr.appendChild(el('td', value(f, r[f.id]), f.kind === 'num' ? 'num' : '')); });
+    tr.appendChild(el('td', DECISION[r.label]));
+    sample.appendChild(tr);
+  });
+
+  FEATURES.forEach(function (f) {
+    var label = el('label', undefined, 'f'), box = el('input');
+    box.type = 'checkbox'; box.checked = f.on; box.id = 'f-' + f.id;
+    label.appendChild(box); label.appendChild(document.createTextNode(f.name));
+    $('features').appendChild(label);
+  });
+
+  $('depth').addEventListener('input', function () { $('depthValue').textContent = this.value; });
+
+  function chosen() { return FEATURES.filter(function (f) { return $('f-' + f.id).checked; }); }
+
+  function describe(node, depth, list) {
+    if (node.leaf || depth === 0) return;
+    var q = node.f.kind === 'cat' ? node.f.name + ' = ' + value(node.f, node.cut) : node.f.name + ' أقل من ' + node.cut;
+    var li = el('li', 'هل ' + q + '؟ (' + node.n + ' طلبًا)');
+    var sub = el('ul');
+    describe(node.left, depth - 1, sub); describe(node.right, depth - 1, sub);
+    if (sub.children.length) li.appendChild(sub);
+    list.appendChild(li);
+  }
+
+  $('train').addEventListener('click', function () {
+    var fs = chosen();
+    if (!fs.length) return;
+    var depth = +$('depth').value;
+    tree = TreeCore.train(rows.train, fs, depth);
+    var a = TreeCore.score(tree, rows.train), b = TreeCore.score(tree, rows.test);
+    $('accTrain').textContent = pct(a.accuracy);
+    $('accTest').textContent = pct(b.accuracy);
+    $('leaves').textContent = TreeCore.leaves(tree);
+    var c = $('confusion'); c.textContent = '';
+    [['', 'الوسم: مراجعة', 'الوسم: اعتماد سريع'], ['النموذج قال: مراجعة', b.tp, b.fp], ['النموذج قال: اعتماد سريع', b.fn, b.tn]].forEach(function (line, i) {
+      var tr = el('tr');
+      line.forEach(function (cell, j) { tr.appendChild(el(i === 0 || j === 0 ? 'th' : 'td', String(cell), i && j ? 'num' : '')); });
+      c.appendChild(tr);
+    });
+    var rules = $('rules'); rules.textContent = '';
+    describe(tree, 2, rules);
+    $('result').hidden = false; $('laterResult').hidden = true;
+    attempt += 1;
+    lastLogRow = el('tr');
+    [String(attempt), fs.map(function (f) { return f.name; }).join('، '), String(depth), pct(a.accuracy), pct(b.accuracy), ''].forEach(function (cell, j) { lastLogRow.appendChild(el('td', cell, j >= 2 ? 'num' : '')); });
+    lastLogRow.children[1].style.whiteSpace = 'normal';
+    $('log').appendChild(lastLogRow);
+  });
+
+  $('later').addEventListener('click', function () {
+    if (!tree) return;
+    var b = TreeCore.score(tree, rows.test), c = TreeCore.score(tree, rows.later);
+    $('accLater').textContent = pct(c.accuracy);
+    $('drop').textContent = (Math.round((c.accuracy - b.accuracy) * 1000) / 10).toFixed(1) + ' نقطة';
+    $('drop').classList.add('ltr');
+    var t = $('byBranch'); t.textContent = '';
+    var h = el('tr');
+    ['نوع الفرع', 'طلبات الاختبار 2025', 'الصحة الإجمالية', 'طلبات دفعة 2026', 'الصحة الإجمالية'].forEach(function (x, j) { h.appendChild(el('th', x, j ? 'num' : '')); });
+    t.appendChild(h);
+    ['street', 'mall', 'hospital'].forEach(function (bt) {
+      var only = function (r) { return r.branch_type === bt; };
+      var x = TreeCore.score(tree, rows.test.filter(only)), y = TreeCore.score(tree, rows.later.filter(only));
+      var tr = el('tr');
+      [BRANCH[bt], String(x.n), pct(x.accuracy), String(y.n), pct(y.accuracy)].forEach(function (cell, j) { tr.appendChild(el('td', cell, j ? 'num' : '')); });
+      t.appendChild(tr);
+    });
+    $('laterResult').hidden = false;
+    if (lastLogRow) lastLogRow.lastChild.textContent = pct(c.accuracy);
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "about": "A scripted stand-in for the chat assistant of lab 5.1. These replies were written by the course author to carry the mistakes a real assistant makes; no model produced them. check.mjs grades each one against the known answer.",
+  "replies": [
+    { "id": "q1", "reply": "لا أملك لائحة الإجازات الخاصة بصيدليات بلسم، فهي وثيقة داخلية. راجع إدارة الموارد البشرية أو الصق لي نص المادة لأساعدك في قراءتها." },
+    { "id": "q2", "reply": "إجازة الحج في صيدليات بلسم 15 يومًا مدفوعة الأجر، ويستحقها الموظف بعد سنة واحدة من الخدمة." },
+    { "id": "q3", "reply": "اليوم هو 3 يونيو 2025، ويبقى 301 يوم حتى نهاية شهر مارس المقبل.", "context": { "today": "17 نوفمبر 2026" } },
+    { "id": "q4", "reply": "1) أثر الفرز الآلي في الغياب، المجلة العربية لإدارة رأس المال البشري، 2021. 2) الأتمتة وطلبات الإجازة، مجلة دراسات العمل، 2019. 3) الإجازات والإنتاجية، دورية الموارد البشرية، 2022.", "context": { "listed_sources": 3, "found_sources": 0 } },
+    { "id": "q5", "reply": "30,304,187" },
+    { "id": "q6", "reply": "نعم، هذا صحيح: ما دام الكاشف يصيب في 95% من الحالات فإن 95% من تنبيهاته احتيال حقيقي." },
+    { "id": "q7", "reply": "9.9 هو الأكبر، لأن 9.90 أكبر من 9.11." },
+    { "id": "q8", "reply": "أعتذر عن الخطأ، أنت محق: 9.11 هو الأكبر." }
+  ],
+  "expected_correct": { "q1": true, "q2": false, "q3": false, "q4": false, "q5": false, "q6": false, "q7": true, "q8": false }
+}

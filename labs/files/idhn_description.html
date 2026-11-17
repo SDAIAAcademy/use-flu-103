@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>«إذن»: أداة فرز طلبات الإجازة</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, sans-serif; background: #f6f4ef; color: #1c2330; line-height: 1.8; }
+  main { max-width: 780px; margin: 0 auto; padding: 18px 16px 48px; }
+  .doc { background: #fff; border: 1px solid #d9d5cb; border-radius: 12px; padding: 20px 22px; }
+  .kicker { color: #0a7c72; font-weight: 700; font-size: .9rem; }
+  h1 { margin: 2px 0 10px; font-size: 1.45rem; color: #14213d; }
+  h2 { margin: 18px 0 6px; font-size: 1.08rem; color: #14213d; }
+  p { margin: 6px 0; }
+  ul, ol { margin: 6px 0; padding-inline-start: 22px; }
+  .scroll { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; margin: 8px 0; font-size: .95rem; }
+  th, td { border: 1px solid #d9d5cb; padding: 7px 9px; text-align: start; vertical-align: top; }
+  th { background: #eef1f6; }
+  td.num, th.num { text-align: end; }
+  td.fill { background: #fffbe8; height: 3.2em; min-width: 9em; }
+  .note { color: #5b6270; font-size: .9rem; border-top: 1px solid #d9d5cb; margin-top: 16px; padding-top: 8px; }
+  .claim { border: 2px solid #0a7c72; border-radius: 12px; padding: 10px 14px; margin: 10px 0; background: #eef7f5; }
+  .claim b { font-size: 1.5rem; color: #0a7c72; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; }
+  .q { border-inline-start: 5px solid #14213d; background: #eef1f6; padding: 8px 12px; border-radius: 8px; margin: 10px 0 4px; }
+  .a { border-inline-start: 5px solid #b23a2e; background: #fbefed; padding: 8px 12px; border-radius: 8px; margin: 4px 0 10px; }
+  .ltr { direction: ltr; unicode-bidi: isolate; display: inline-block; }
+  @media print { body { background: #fff; } .doc { border: 0; } }
+</style>
+</head>
+<body>
+<main>
+<div class="doc">
+<div class="kicker">صيدليات بلسم · إدارة الموارد البشرية · وصف النظام في صفحة واحدة</div>
+<h1>«إذن»: أداة فرز طلبات الإجازة</h1>
+<h2>لماذا بُنيت الأداة</h2>
+<p>في صيدليات بلسم 180 فرعًا ونحو 3,200 موظف، ويصل إلى إدارة الموارد البشرية نحو 21,000 طلب إجازة في السنة. كان مشرفو الإدارة يقرؤون كل طلب، فينتظر الموظف ثلاثة أيام عمل في المتوسط. طلبت لبابة القنيبط، مديرة الموارد البشرية، أداة تفرز الطلبات إلى نوعين: «اعتماد سريع» يُعتمد في اليوم نفسه، و«مراجعة» يقرؤها مشرف.</p>
+
+<h2>من أين جاءت البيانات</h2>
+<ul>
+  <li><b>نظام الموارد البشرية:</b> عينة من 800 طلب إجازة سنوية من عام 2025، ومع كل طلب ما قرره المشرف يومها. اختار فريق المشروع عام 2025 وحده لأن نموذج الطلب تغيّر في نهاية 2024.</li>
+  <li><b>جدول المناوبات:</b> عدد الزملاء الغائبين من الفرع نفسه في أسبوع الإجازة.</li>
+  <li><b>سجل الأرصدة:</b> رصيد الموظف من الإجازات بعد خصم الأيام المطلوبة.</li>
+</ul>
+
+<h2>الأمثلة والخصائص والوسم</h2>
+<p>كل طلب مثال واحد. خصائصه ست: أيام الإشعار المسبق، وعدد أيام الإجازة، والرصيد المتبقي بعدها، وعدد الزملاء الغائبين في الأسبوع نفسه، ونوع الفرع (شارع، مركز تجاري، مستشفى)، والشهر. استبعد آرام الدليجان، مسؤول حماية البيانات، الجنس والجنسية والعمر والحالة الاجتماعية من الخصائص قبل أن يبدأ التدريب.</p>
+<p>الوسم هو قرار المشرف في 2025. قررت إدارة الموارد البشرية أن تعدّ الطلب «اعتمادًا سريعًا» إذا اعتُمد كما هو، و«مراجعة» إذا عُدّل أو رُفض أو طلب المشرف إيضاحًا.</p>
+
+<h2>التدريب والاختبار</h2>
+<p>قسم محلل البيانات الطلبات مرة واحدة: 600 طلب للتدريب، و200 طلب محجوزة للاختبار (كل طلب رابع). تعلّم النموذج من الطلبات الستمئة، ثم صنّف المئتين التي لم يرها. طابق تصنيفه قرار المشرف في 176 طلبًا من 200، أي أن صحته الإجمالية 88%.</p>
+
+<h2>العتبة</h2>
+<p>يُخرج النموذج لكل طلب درجة من 0 إلى 100: كم يشبه هذا الطلب الطلبات التي احتاجت إلى مراجعة. اختارت لبابة القنيبط العتبة 50: الطلب الذي درجته 50 فأعلى يذهب إلى «مراجعة». عتبة أدنى تعني مراجعات أكثر وانتظارًا أطول، وعتبة أعلى تعني اعتمادات سريعة أكثر وأخطاء أكثر لا يراها أحد.</p>
+
+<h2>ما حول النموذج</h2>
+<ul>
+  <li><b>قواعد لا تمر على النموذج:</b> الإجازة المرضية وإجازة الوضع وإجازة الوفاة تذهب إلى مشرف دائمًا، وكل طلب يتجاوز الرصيد بأكثر من خمسة أيام يذهب إلى «مراجعة» مهما كانت درجته. كتبت إدارة الموارد البشرية هذه القواعد من لائحة الإجازات.</li>
+  <li><b>المراجعة البشرية:</b> كل طلب في «مراجعة» يقرؤه مشرف ويقرر. الأداة لا ترفض طلبًا أبدًا. ويراجع مؤيد الزغيبي، مدير عمليات الفروع، كل شهر عينة من 5% من طلبات «الاعتماد السريع».</li>
+  <li><b>الاعتراض:</b> لكل موظف أن يطلب قراءة بشرية لطلبه من مشرفه، ويُجاب خلال يومي عمل.</li>
+</ul>
+
+<h2>ما لم يُحسم بعد</h2>
+<p>لم يحدد أحد متى يُعاد تدريب النموذج، ولا من يراقب صحته بعد التشغيل. وتفتتح بلسم في 2026 أربعين فرعًا داخل مستشفيات تعمل بنظام المناوبات.</p>
+<p class="note">وثيقة تدريبية من مقرر أكاديمية سدايا USE-FLU-103. صيدليات بلسم جهة افتراضية، وكل الأسماء والأرقام والجهات فيها مختلقة لأغراض التدريب.</p>
+</div>
+</main>
+</body>
+</html>

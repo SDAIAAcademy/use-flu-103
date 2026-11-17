@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>خريطة مسار المعالجة</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, sans-serif; background: #f6f4ef; color: #1c2330; line-height: 1.8; }
+  main { max-width: 780px; margin: 0 auto; padding: 18px 16px 48px; }
+  .doc { background: #fff; border: 1px solid #d9d5cb; border-radius: 12px; padding: 20px 22px; }
+  .kicker { color: #0a7c72; font-weight: 700; font-size: .9rem; }
+  h1 { margin: 2px 0 10px; font-size: 1.45rem; color: #14213d; }
+  h2 { margin: 18px 0 6px; font-size: 1.08rem; color: #14213d; }
+  p { margin: 6px 0; }
+  ul, ol { margin: 6px 0; padding-inline-start: 22px; }
+  .scroll { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; margin: 8px 0; font-size: .95rem; }
+  th, td { border: 1px solid #d9d5cb; padding: 7px 9px; text-align: start; vertical-align: top; }
+  th { background: #eef1f6; }
+  td.num, th.num { text-align: end; }
+  td.fill { background: #fffbe8; height: 3.2em; min-width: 9em; }
+  .note { color: #5b6270; font-size: .9rem; border-top: 1px solid #d9d5cb; margin-top: 16px; padding-top: 8px; }
+  .claim { border: 2px solid #0a7c72; border-radius: 12px; padding: 10px 14px; margin: 10px 0; background: #eef7f5; }
+  .claim b { font-size: 1.5rem; color: #0a7c72; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; }
+  .q { border-inline-start: 5px solid #14213d; background: #eef1f6; padding: 8px 12px; border-radius: 8px; margin: 10px 0 4px; }
+  .a { border-inline-start: 5px solid #b23a2e; background: #fbefed; padding: 8px 12px; border-radius: 8px; margin: 4px 0 10px; }
+  .ltr { direction: ltr; unicode-bidi: isolate; display: inline-block; }
+  @media print { body { background: #fff; } .doc { border: 0; } }
+</style>
+</head>
+<body>
+<main>
+<div class="doc">
+<div class="kicker">المختبر 1.1 · ورقة العمل</div>
+<h1>خريطة مسار المعالجة</h1>
+<p>املأ الخريطة من وصف «إذن». في العمود الأخير اكتب اسم من اتخذ الخيار، أو «لم يُحسم» إذا لم يختر أحد.</p>
+<div class="scroll"><table>
+<tr><th>المحطة</th><th>السؤال</th><th>ما يحدث في «إذن»</th><th>من اختار؟</th></tr>
+<tr><td><b>1 · مصادر البيانات</b></td><td>من أين جاءت الأمثلة؟</td><td class="fill"></td><td class="fill"></td></tr>
+<tr><td><b>2 · الأمثلة والخصائص والوسم</b></td><td>ما المثال الواحد؟ ما الخصائص؟ ما الوسم؟</td><td class="fill"></td><td class="fill"></td></tr>
+<tr><td><b>3 · التدريب</b></td><td>على كم مثال تعلّم النموذج؟</td><td class="fill"></td><td class="fill"></td></tr>
+<tr><td><b>4 · الاختبار</b></td><td>على ماذا اختُبر؟ وما النتيجة؟</td><td class="fill"></td><td class="fill"></td></tr>
+<tr><td><b>5 · العتبة</b></td><td>أين يقع الحد بين النوعين؟</td><td class="fill"></td><td class="fill"></td></tr>
+<tr><td><b>6 · القواعد حول النموذج</b></td><td>ما الذي لا يمر على النموذج؟</td><td class="fill"></td><td class="fill"></td></tr>
+<tr><td><b>7 · المراجعة البشرية والاعتراض</b></td><td>من يقرأ؟ ومتى؟</td><td class="fill"></td><td class="fill"></td></tr>
+<tr><td><b>8 · بعد التشغيل</b></td><td>من يراقب؟ ومتى يُعاد التدريب؟</td><td class="fill"></td><td class="fill"></td></tr>
+</table></div>
+<p>الاسم: ................................ &nbsp; عدد الخيارات البشرية التي وجدتها: ........</p>
+<p class="note">وثيقة تدريبية من مقرر أكاديمية سدايا USE-FLU-103. صيدليات بلسم جهة افتراضية، وكل الأسماء والأرقام والجهات فيها مختلقة لأغراض التدريب.</p>
+</div>
+</main>
+</body>
+</html>

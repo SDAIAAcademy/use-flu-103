@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>بطاقة مجموعة البيانات: مواعيد العيادات</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, sans-serif; background: #f6f4ef; color: #1c2330; line-height: 1.8; }
+  main { max-width: 780px; margin: 0 auto; padding: 18px 16px 48px; }
+  .doc { background: #fff; border: 1px solid #d9d5cb; border-radius: 12px; padding: 20px 22px; }
+  .kicker { color: #0a7c72; font-weight: 700; font-size: .9rem; }
+  h1 { margin: 2px 0 10px; font-size: 1.45rem; color: #14213d; }
+  h2 { margin: 18px 0 6px; font-size: 1.08rem; color: #14213d; }
+  p { margin: 6px 0; }
+  ul, ol { margin: 6px 0; padding-inline-start: 22px; }
+  .scroll { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; margin: 8px 0; font-size: .95rem; }
+  th, td { border: 1px solid #d9d5cb; padding: 7px 9px; text-align: start; vertical-align: top; }
+  th { background: #eef1f6; }
+  td.num, th.num { text-align: end; }
+  td.fill { background: #fffbe8; height: 3.2em; min-width: 9em; }
+  .note { color: #5b6270; font-size: .9rem; border-top: 1px solid #d9d5cb; margin-top: 16px; padding-top: 8px; }
+  .claim { border: 2px solid #0a7c72; border-radius: 12px; padding: 10px 14px; margin: 10px 0; background: #eef7f5; }
+  .claim b { font-size: 1.5rem; color: #0a7c72; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; }
+  .q { border-inline-start: 5px solid #14213d; background: #eef1f6; padding: 8px 12px; border-radius: 8px; margin: 10px 0 4px; }
+  .a { border-inline-start: 5px solid #b23a2e; background: #fbefed; padding: 8px 12px; border-radius: 8px; margin: 4px 0 10px; }
+  .ltr { direction: ltr; unicode-bidi: isolate; display: inline-block; }
+  @media print { body { background: #fff; } .doc { border: 0; } }
+</style>
+</head>
+<body>
+<main>
+<div class="doc">
+<div class="kicker">مورِّد خارجي · بيانات تدريب نموذج يتوقع الغياب عن مواعيد عيادات الفروع</div>
+<h1>بطاقة مجموعة البيانات: مواعيد العيادات</h1>
+<h2>الغرض</h2>
+<p>تدريب نموذج يتوقع هل سيغيب المراجع عن موعده، لتتصل العيادة بمن يُتوقع غيابه أو تحجز موعده لشخصين.</p>
+<div class="scroll"><table>
+<tr><th>الحجم والفترة</th><td>48,000 موعد خلال 14 شهرًا.</td></tr>
+<tr><th>المصدر</th><td>تسع عيادات في مدينتين كبيرتين. المواعيد المحجوزة من التطبيق فقط: الحجز بالهاتف والحضور دون موعد غير مسجلين. مواعيد الفترة الصباحية في أيام العمل فقط.</td></tr>
+<tr><th>الخصائص</th><td>العمر، والمسافة إلى العيادة، وعدد الغيابات السابقة، ونوع الخدمة، وعدد الأيام بين الحجز والموعد، وهل أُرسلت إلى المراجع رسالة «نأسف لعدم حضورك».</td></tr>
+<tr><th>الوسم</th><td>«لم يحضر» يكتبه موظف الاستقبال يدويًا في نهاية اليوم. في أربع عيادات يُكتب «لم يحضر» أيضًا لمن تأخر أو أعاد الجدولة في اليوم نفسه. مراجعة 300 موعد وجدت الوسم خاطئًا في 14% منها.</td></tr>
+<tr><th>التقسيم</th><td>75% للتدريب و25% للاختبار، بتقسيم عشوائي.</td></tr>
+<tr><th>النتيجة المعلنة</th><td>صحة إجمالية 91% على بيانات الاختبار.</td></tr>
+</table></div>
+<p class="note">وثيقة تدريبية من مقرر أكاديمية سدايا USE-FLU-103. صيدليات بلسم جهة افتراضية، وكل الأسماء والأرقام والجهات فيها مختلقة لأغراض التدريب.</p>
+</div>
+</main>
+</body>
+</html>
